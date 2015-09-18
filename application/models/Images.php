@@ -1,5 +1,6 @@
 <?php
 
+//Class that allows us to pull images from the database
 class Images extends CI_Model {
 
 	
@@ -8,6 +9,8 @@ class Images extends CI_Model {
             parent::_construct();
 	}
         
+        //pulls all images from the database and returns
+        //the result array
         function all()
         {
             $this->db->order_by("id", "desc");
@@ -15,6 +18,8 @@ class Images extends CI_Model {
             return $query->result_array();
         }
         
+        //pulls newest images from the database and returns
+        //the result array
         function newest()
         {
             $this->db->order_by("id", "desc");

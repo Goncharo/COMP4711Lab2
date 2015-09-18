@@ -1,3 +1,3 @@
 {thetable}
-                <h1>The image gallery, complete :)</h1>
+<h1>The image gallery, complete :)</h1>
             
